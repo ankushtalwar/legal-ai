@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Venture Doc Reviewer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="./style.css" rel="stylesheet" />
+</head>
+<body>
+  <header>
+    <h1>Venture Doc Reviewer</h1>
+    <div id="health" class="badge">Checking health…</div>
+  </header>
+
+  <main>
+    <section class="pane upload">
+      <h2>Upload a document (.docx or text)</h2>
+
+      <div id="drop" class="drop">
+        <p><strong>Drag & Drop</strong> a file here, or</p>
+        <label class="btn">
+          <input id="file" type="file" accept=".docx,.txt,.md,.rtf" hidden />
+          Choose File
+        </label>
+      </div>
+
+      <div id="selected" class="selected hidden">
+        <span id="filename">No file selected</span>
+        <button id="clear" class="link">clear</button>
+      </div>
+
+      <div class="actions">
+        <button id="analyze" class="primary" disabled>Analyze</button>
+        <span id="spinner" class="spinner hidden"></span>
+      </div>
+    </section>
+
+    <section class="pane result">
+      <h2>Result</h2>
+      <div id="result" class="card muted">No result yet.</div>
+    </section>
+  </main>
+
+  <footer>
+    <small>API: <code id="api-url"></code></small>
+  </footer>
+
+  <script src="./app.js" type="module"></script>
+</body>
+</html>
