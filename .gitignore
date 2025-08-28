@@ -1,12 +1,53 @@
-
-__pycache__
-*.pyc
-
-.venv/
+# Byte-compiled / cache files
 __pycache__/
-*.pyc
+*.py[cod]
+*.so
+
+# Virtual environments
+.venv/
+env/
+venv/
+
+# Jupyter / IPython
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs / local state
+*.log
+*.out
+*.err
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+
+# Hugging Face / model caches
+huggingface/
+.cache/
+~/.cache/huggingface/
 outputs/
+checkpoints/
+runs/
+
+# Data
+*.csv
+*.tsv
+*.jsonl
+*.docx
+*.pdf
+*.tmp
+
+# Large binaries (compiled libs, weights, etc.)
 *.bin
-*.safetensors
 *.pt
+*.ckpt
 *.dylib
+*.pkl
+
+# Training artifacts
+wandb/
+mlruns/
