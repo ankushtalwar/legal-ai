@@ -33,21 +33,11 @@ outputs/
 checkpoints/
 runs/
 
-# Data
+# Data / test files
 *.csv
-*.tsv
-*.jsonl
+*.tsv*
+
+# Add project-specific ignores
 *.docx
 *.pdf
-*.tmp
 
-# Large binaries (compiled libs, weights, etc.)
-*.bin
-*.pt
-*.ckpt
-*.dylib
-*.pkl
-
-# Training artifacts
-wandb/
-mlruns/
