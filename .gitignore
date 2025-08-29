@@ -41,3 +41,6 @@ runs/
 *.docx
 *.pdf
 
+# Local data (contracts, test docs, PDFs, etc.)
+data/
+frontend/dist/
